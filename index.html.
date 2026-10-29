@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#11110f">
+<title>Luxe Finds | Curated discoveries</title>
+<meta name="description" content="Luxe Finds — a curated shopping experience. View the featured find and check supplier details before ordering.">
+<style>
+:root{--black:#11110f;--ink:#26241f;--gold:#c7a66a;--cream:#f7f3eb;--white:#fffdf8;--muted:#777268;--line:#e4dccd}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+.topline{background:var(--black);color:#eee3cc;text-align:center;padding:11px 15px;font-size:10px;letter-spacing:.2em;text-transform:uppercase}
+header{max-width:1200px;margin:auto;padding:27px 6%;display:flex;justify-content:space-between;align-items:center;gap:24px}
+.logo{font:30px Georgia,'Times New Roman',serif;letter-spacing:.045em;text-decoration:none;color:var(--black)}.logo em{font-style:normal;color:var(--gold)}
+nav{display:flex;gap:26px}nav a{font-size:11px;letter-spacing:.13em;text-transform:uppercase;text-decoration:none;color:var(--ink)}
+.hero{max-width:1200px;margin:14px auto 76px;padding:0 6%;display:grid;grid-template-columns:1.02fr .98fr;gap:7%;align-items:center}
+.visual{position:relative;min-height:540px;background:linear-gradient(145deg,#e5dac8,#c9b99f);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.visual:before{content:"";position:absolute;width:390px;height:390px;border:1px solid rgba(255,253,248,.72);border-radius:50%}
+.visual:after{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(255,253,248,.5);border-radius:50%}
+.visual-copy{z-index:1;text-align:center;padding:30px;max-width:340px}.visual-copy small{font-size:10px;letter-spacing:.25em;text-transform:uppercase;color:#655642}.visual-copy h2{font:42px/1.05 Georgia,serif;font-weight:400;margin:18px 0;color:#2c281f}.visual-copy p{font-size:12px;line-height:1.7;color:#61594e}
+.pill{position:absolute;top:20px;left:20px;background:var(--white);padding:10px 13px;font-size:9px;letter-spacing:.16em;text-transform:uppercase;z-index:2}
+.content .eyebrow{font-size:10px;letter-spacing:.24em;text-transform:uppercase;color:#967644}.content h1{font:400 clamp(42px,5vw,64px)/1.02 Georgia,serif;letter-spacing:-.035em;margin:20px 0 18px;color:var(--black)}.intro{font-size:14px;line-height:1.9;color:var(--muted);max-width:450px}
+.price{font:26px Georgia,serif;margin:25px 0 8px}.price small{font:11px Arial,sans-serif;color:var(--muted);display:block;margin-top:8px;line-height:1.6}
+.notice{font-size:11px;line-height:1.75;color:#776f62;border-left:2px solid var(--gold);padding-left:12px;margin:22px 0}
+.actions{display:flex;gap:11px;flex-wrap:wrap;margin:26px 0 20px}.btn{display:inline-flex;justify-content:center;align-items:center;text-decoration:none;background:var(--black);color:#fffdf8;border:1px solid var(--black);padding:16px 20px;font-size:10px;letter-spacing:.16em;text-transform:uppercase;transition:background .2s}.btn:hover{background:#39352c}.btn.alt{background:transparent;color:var(--black)}.btn.alt:hover{background:#e9e0d2}
+.trust{display:flex;gap:16px;flex-wrap:wrap;margin-top:26px;color:#746d61;font-size:10px;letter-spacing:.04em}.trust span:before{content:"✦";color:var(--gold);margin-right:7px}
+.band{background:var(--black);color:var(--cream);padding:62px 6%;text-align:center}.band .eyebrow{color:var(--gold);font-size:10px;letter-spacing:.23em;text-transform:uppercase}.band h2{font:400 clamp(30px,4vw,44px) Georgia,serif;margin:17px 0}.band p{max-width:570px;margin:auto;color:#c9c2b5;font-size:13px;line-height:1.9}
+.features{max-width:1200px;margin:auto;padding:64px 6%;display:grid;grid-template-columns:repeat(3,1fr);gap:34px}.features article{border-top:1px solid var(--gold);padding-top:20px}.features h3{font:400 22px Georgia,serif;margin:0 0 12px}.features p{font-size:12px;line-height:1.9;color:var(--muted);margin:0}
+footer{border-top:1px solid var(--line);max-width:1200px;margin:auto;padding:26px 6%;display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;color:var(--muted);font-size:10px;letter-spacing:.04em}footer a{color:inherit;text-decoration:none}
+@media(max-width:760px){header{padding:22px 5%}.logo{font-size:25px}nav{gap:13px}nav a{font-size:9px}.hero{grid-template-columns:1fr;padding:0 5%;gap:34px;margin-bottom:48px}.visual{min-height:365px}.visual:before{width:285px;height:285px}.visual:after{width:220px;height:220px}.visual-copy h2{font-size:35px}.content h1{font-size:47px}.band{padding:48px 6%}.features{grid-template-columns:1fr;padding:46px 5%;gap:26px}footer{padding:22px 5%;flex-direction:column}}
+</style>
+</head>
+<body>
+<div class="topline">The art of finding something special</div>
+<header>
+  <a class="logo" href="#" aria-label="Luxe Finds home">LUXE <em>FINDS</em></a>
+  <nav aria-label="Main navigation"><a href="#featured">Featured find</a><a href="#about">Our approach</a><a href="#contact">Contact</a></nav>
+</header>
+<main>
+<section class="hero" id="featured">
+  <div class="visual" role="img" aria-label="Decorative luxury product placeholder; supplier product image not yet verified">
+    <span class="pill">Curated discovery</span>
+    <div class="visual-copy">
+      <small>Luxe Finds · The edit</small>
+      <h2>Everyday,<br>elevated.</h2>
+      <p>Product image pending confirmation. We’ll show the exact item once its supplier listing has been checked.</p>
+    </div>
+  </div>
+  <div class="content">
+    <div class="eyebrow">A featured find</div>
+    <h1>A little luxury<br>in the everyday.</h1>
+    <p class="intro">Welcome to Luxe Finds: a considered collection of discoveries chosen to bring a touch of style to your routine. We’re checking the supplier listing before confirming product details.</p>
+    <div class="price">R77.56 <small>Indicative supplier price shown in the provided AliExpress link — not a confirmed Luxe Finds retail price.</small></div>
+    <p class="notice"><strong>Product details not yet verified.</strong> Please check the supplier page for the exact item, available options, current price, shipping fees, delivery estimates and return terms before ordering.</p>
+    <div class="actions">
+      <a class="btn" href="https://www.aliexpress.com/item/1005006127377694.html" target="_blank" rel="noopener noreferrer">View supplier listing ↗</a>
+      <a class="btn alt" href="#about">Discover Luxe Finds</a>
+    </div>
+    <div class="trust"><span>Carefully curated</span><span>Clear information</span><span>Thoughtful service</span></div>
+  </div>
+</section>
+<section class="band" id="about">
+  <div class="eyebrow">The Luxe Finds philosophy</div>
+  <h2>Understated style. Thoughtful finds.</h2>
+  <p>Our goal is to make discovering something new feel effortless. We value clear product information, transparent pricing and a shopping experience that respects your time. Product claims will be added only after they’re confirmed.</p>
+</section>
+<section class="features">
+  <article><h3>Product information</h3><p>Confirmed product name, materials, dimensions, colours and what’s included will be added after checking the supplier listing.</p></article>
+  <article><h3>Shipping & returns</h3><p>Delivery timelines, shipping charges and return conditions need to be confirmed for your destination before you place an order.</p></article>
+  <article><h3>Need assistance?</h3><p>Add your real customer-service email or social account here before publishing. Do not use placeholder contact details for live orders.</p></article>
+</section>
+</main>
+<footer id="contact"><span>© <span id="year"></span> Luxe Finds. All rights reserved.</span><span>Supplier: <a href="https://www.aliexpress.com/item/1005006127377694.html" target="_blank" rel="noopener noreferrer">View original listing ↗</a></span></footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
